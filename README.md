@@ -1,7 +1,7 @@
 # **Беляков Виктор Сергеевич**
 ## *Студент ЗАМТА*
 ### ~~Группа ИС-21А~~
-![Поликлиника]((https://img.artlebedev.ru/everything_files/images/6671/exterior-1200.jpg.webp)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Fru%2Ffree-icon%2Fhealth-clinic_294581&psig=AOvVaw1Fy4DaM4Ui0g7nLUyzzZgX&ust=1737099809107000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDziZrf-YoDFQAAAAAdAAAAABAE)
+![Поликлиника](https://img.artlebedev.ru/everything_files/images/6671/exterior-1200.jpg.webp))
 **Поликлиника** —  многопрофильное или специализированное лечебно-профилактическое учреждение для оказания амбулаторной медицинской помощи больным на приёме и на дому, учреждение первичной медико-санитарной помощи.
 
 Приложение для Поликлиники приветсвует вас  авторизацией пользователя, 

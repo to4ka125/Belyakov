@@ -31,7 +31,7 @@ namespace Belyakov
             {
                 if (pw1.Password=="user")
                 {
-
+                    MessageBox.Show("ffgfg");
                 }
                 else
                 {

@@ -24,5 +24,24 @@ namespace Belyakov
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (tx1.Text == "user")
+            {
+                if (pw1.Password=="user")
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Пароль введен не верно");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Данного пользователя не существует");
+            }
+        }
     }
 }

@@ -4,6 +4,161 @@
              xmlns:local="clr-namespace:Belyakov"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="BtnClose" TargetType="Button">
+            <Setter Property="Width" Value="19"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Image x:Name="Image" Source="/Image/powerOf.png"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Image" Property="Source" 
+                                    Value="/Image/powerOn.png"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="pcaholderText" TargetType="TextBox">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5"
+                            BorderBrush="#333"
+                            BorderThickness="1"
+                            >
+
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost"/>
+                                <TextBlock x:Name="textBlock" Text="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       Padding="{TemplateBinding Padding}" 
+                                       FontSize="{TemplateBinding FontSize}"
+                                       IsHitTestVisible="False"
+                                       Opacity="0.6"
+                                       Visibility="Collapsed"/>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="textBlock" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="pcaholderTextPassword" TargetType="PasswordBox">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border CornerRadius="5"
+                            BorderBrush="#333"
+                            BorderThickness="1"
+                            >
+
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost"/>
+                                <TextBlock x:Name="textBlock" Text="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       Padding="{TemplateBinding Padding}" 
+                                       FontSize="{TemplateBinding FontSize}"
+                                       IsHitTestVisible="False"
+                                       Opacity="0.6"
+                                       Visibility="Visible"/>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                           
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border x:Name="border"
+                                CornerRadius="15"
+                                BorderThickness="1"
+                                BorderBrush="#333"
+                                Background="Transparent"
+                              >
+                            <Grid>
+                                <TextBlock x:Name="textBlock"
+                                           Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                                           Foreground="Gray"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           FontFamily="/Fonts/#Poppins"/>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                To="#7097F8"
+                                                Duration="0:0:0:0.3"  
+                                                />
+                                            <ColorAnimation
+                                                Storyboard.TargetName="textBlock"
+                                                Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                To="#fff"
+                                                Duration="0:0:0:0.3"
+                                                />
+                                            <ThicknessAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="BorderThickness"
+                                                To="0"
+                                                Duration="0:0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                To="Transparent"
+                                                Duration="0:0:0:0.2"
+                                                />
+                                            <ColorAnimation
+                                                Storyboard.TargetName="textBlock"
+                                                Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                To="Gray"
+                                                Duration="0:0:0:0.2"
+                                                />
+                                            <ThicknessAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="BorderThickness"
+                                                To="1"
+                                                Duration="0:0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

@@ -1,7 +1,7 @@
 # **Беляков Виктор Сергеевич**
 ## *Студент ЗАМТА*
 ### ~~Группа ИС-21А~~
-![Поликлиника]([[[https://avatars.mds.yandex.net/get-mpic/5486142/img_id6718189194039965071.jpeg/orig](https://img.artlebedev.ru/everything_files/images/6671/exterior-1200.jpg.webp)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.m24.ru%2Fnews%2Fgorod%2F17052021%2F165453&psig=AOvVaw2ehUPS5NvYv5MZ55r288xH&ust=1737095047513000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj-xr3N-YoDFQAAAAAdAAAAABAE)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF3AFfWB-yRHpP5axyP3wgVt6icTNG5ev-Tw&s))
+![Поликлиника]((https://img.artlebedev.ru/everything_files/images/6671/exterior-1200.jpg.webp))
 **Поликлиника** —  многопрофильное или специализированное лечебно-профилактическое учреждение для оказания амбулаторной медицинской помощи больным на приёме и на дому, учреждение первичной медико-санитарной помощи.
 
 Приложение для Поликлиники приветсвует вас  авторизацией пользователя, 

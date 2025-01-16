@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Belyakov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="440" Width="300" WindowStyle="None">
+        Title="MainWindow" Height="440" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel>
             <Button Margin="14" HorizontalAlignment="Right" Style="{StaticResource BtnClose}"/>
@@ -14,7 +14,7 @@
 
             <TextBox x:Name="tx1" Margin="0 15" Style="{StaticResource pcaholderText}"  Width="200" Height="50" Tag="Логин"/>
 
-            <PasswordBox  x:Name="pw1" Style="{StaticResource pcaholderTextPassword}"  Width="200" Height="50" Tag="Пароль"/>
+            <PasswordBox PasswordChanged="pw1_PasswordChanged"  x:Name="pw1" Style="{StaticResource pcaholderTextPassword}"  Width="200" Height="50" Tag="Пароль"/>
 
             <Button Style="{StaticResource btnStyle}" Width="125" Height="50" Content="Войти" Margin="0 64 0 0" Click="Button_Click"/>
         </StackPanel>

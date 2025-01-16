@@ -23,6 +23,26 @@
             </Setter>
         </Style>
 
+
+        <Style x:Key="BtnReload" TargetType="Button">
+            <Setter Property="Width" Value="21"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Image x:Name="Image" Source="/Image/reload.png" Opacity="0.7"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Image" Property="Opacity" 
+                                    Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="pcaholderText" TargetType="TextBox">
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="Padding" Value="12"/>

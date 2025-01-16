@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Belyakov.Forms;
 namespace Belyakov
 {
     /// <summary>
@@ -31,16 +31,34 @@ namespace Belyakov
             {
                 if (pw1.Password=="user")
                 {
-                    MessageBox.Show("ffgfg");
+                    
                 }
                 else
                 {
+                    Cap cap = new Cap();
+                    this.Visibility = Visibility.Hidden;
+                    cap.ShowDialog();
+                    this.Visibility = Visibility.Visible;
+
                     MessageBox.Show("Пароль введен не верно");
                 }
             }
             else
             {
                 MessageBox.Show("Данного пользователя не существует");
+            }
+        }
+
+        private void pw1_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            TextBlock textBlock = (TextBlock)pw1.Template.FindName("textBlock", pw1);
+            if (pw1.Password.Length > 0)
+            {
+                textBlock.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                textBlock.Visibility = Visibility.Visible;
             }
         }
     }

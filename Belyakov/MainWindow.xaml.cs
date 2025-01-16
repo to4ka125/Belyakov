@@ -31,7 +31,10 @@ namespace Belyakov
             {
                 if (pw1.Password=="user")
                 {
-                    
+                    MainForm mn = new MainForm();
+                    this.Visibility = Visibility.Hidden;
+                    mn.ShowDialog();
+                    this.Visibility = Visibility.Visible;
                 }
                 else
                 {
